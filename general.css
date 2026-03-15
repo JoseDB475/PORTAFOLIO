@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{  
+    background-image:url(paisaje-de-fondo.jpeg);
+    /* ajusta la imagen al tamaño de la pantalla */
+    background-size: cover;
+    background-position: center;
+    /* evita que se repita la imagen */
+    background-repeat: no-repeat;
+    /* mantiene la imagen fija al hacer scroll, es decir la accion de deslizar o desplazar el contenido */
+    background-attachment: fixed;
+    /* asegura que el body cubra toda la altura de la pantalla */
+    min-height: 100vh;
+
+}
