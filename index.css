@@ -10,6 +10,16 @@ header {
     height: 50px;
     margin: 0.2rem;
     border-radius: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu__list{
+         display: flex;
+         gap: 20px;
+
 }
 
 .titulo_principal {
@@ -21,28 +31,22 @@ header {
 .menu_logo{
     display: flex;
     height: 50px;
-    width: 200rem;
+    width: 2rem;
     margin: -3.1rem;
     margin-left: 0.3rem;
 }
 
 .menu_navegacion{
     display:flex;
-    justify-content: flex-end;
+    gap: 100px;
     color: aliceblue;
-    padding: 5rem;
+    margin-right:2rem;
+    
     /* falta quitarle los puntos y colocarlo horizontalmente */
     
     
 }
 
-.redes_sociales{
-    display: flex;
-    justify-content: flex-start;
-    text-align: left;
-    color: rgb(241, 235, 235);
-    /* falta colocarlo en la parte superior izquierda del header quitarle los puntos y colocarlo horizontalmente */
-}
 
 .img_foto{
     display: block;
