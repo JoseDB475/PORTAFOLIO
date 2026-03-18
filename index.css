@@ -11,9 +11,10 @@ header {
     margin: 0.2rem;
     border-radius: 1%;
     display: flex;
+    /* este atributo sirve para separ elementos en el eje  x */
     justify-content: space-between;
+    /* este atributo centra en el eje y */
     align-items: center;
-
 }
 
 .menu__list{
@@ -26,13 +27,14 @@ header {
     text-wrap: balance;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(234, 240, 233);
 }
 
 .menu_logo{
     display: flex;
-    height: 50px;
+    height: 40px;
     width: 2rem;
-    margin: -3.1rem;
+    margin: 3.1rem;
     margin-left: 0.3rem;
 }
 
@@ -41,17 +43,42 @@ header {
     gap: 100px;
     color: aliceblue;
     margin-right:2rem;
-    
-    /* falta quitarle los puntos y colocarlo horizontalmente */
-    
+      
+}
+.menu__list{
+    /* este atributo sirve para quitarle los puntos a las listas */
+    list-style: none;
+}
+
+.main_portafolio{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 9rem;
     
 }
 
+.foto_portada{
+       border-radius: 50%;
+}
 
-.img_foto{
-    display: block;
-    margin:auto;
-    width: 30rem;
-    margin-top: 20rem;
-    border-radius: 50%;
+.title_portafolio{
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+.text_portafolio{
+    font-family: cursive;
+}
+
+footer{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 9rem;
 }
