@@ -4,23 +4,128 @@
     box-sizing: border-box;
 }
 
-html{
+html,body{
     font-size: 62.5%;
+    height: 100%;
+    margin: 0;
+}
+
+body{  
+    background-color: #1e293b;
+    color: #e2e8f0;
+    background-position: center;
+    /* asegura que el body cubra toda la altura de la pantalla */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #22c55e;
+    padding: 10px;
+    height: 50px;
+    margin: 0;
+    border-radius: 1%;
+    display: flex;
+    /* este atributo sirve para separ elementos en el eje  x */
+    justify-content: space-between;
+    /* este atributo centra en el eje y */
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu__list{
+         display: flex;
+         gap: 20px;
+         text-overflow: clip;
+         text-decoration: none;
+         font-size: 1.5rem;
+         font-family: 'Times New Roman', Times, serif;
+         
+
+}
+
+.titulo_principal {
+    text-wrap: balance;
+    text-align: center;
+    font-family: monospace;
+    color: rgb(234, 240, 233);
+    font-size: 3rem;
+}
+
+.menu_logo{
+    display: flex;
+    height: 40px;
+    width: 2rem;
+    margin: 3.1rem;
+    margin-left: 0.3rem;
+    color: #e2e8f0;
+}
+
+.menu_navegacion{
+    display:flex;
+    gap: 100px;
+    margin-right:2rem;
+     
+}
+
+.pestaña_navegacion{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+.menu__list{
+    /* este atributo sirve para quitarle los puntos a las listas */
+    list-style: none;
 }
 
 
 
-body{  
-    background-image:url(paisaje-de-fondo.jpeg);
-    /* ajusta la imagen al tamaño de la pantalla */
-    background-size: cover;
-    background-position: center;
-    /* evita que se repita la imagen */
-    background-repeat: no-repeat;
-    /* mantiene la imagen fija al hacer scroll, es decir la accion de deslizar o desplazar el contenido */
-    background-attachment: fixed;
-    /* asegura que el body cubra toda la altura de la pantalla */
-    min-height: 100vh;
 
+.main_portafolio{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 9rem;
+    
+}
+.foto_portada{
+    border-radius: 50%;
+    box-shadow: 0 0 25px #22c55e;
+    transition: transform 0.3s ease ;   
+}
+
+img{
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+.title_portafolio{
+    font-size: 4rem;
+    padding: 1.7rem;
+}
+
+
+
+footer{
+    background-color: #22c55e;
+    color:rgb(234, 240, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 3rem;
 }
 
